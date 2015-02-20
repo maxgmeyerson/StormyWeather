@@ -1,0 +1,126 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, img, ins, kbd, q, s, samp, small, strike, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	line-height: 1;
+	background-image: url("../Images/stormy-weather-background.jpg");
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1 {
+	color: white;
+	font-size: 60px;
+	font-family: 'Oxygen', sans-serif;
+	padding: 20px;
+}
+
+p {
+	color: white;
+	padding-bottom: 10px;
+	font-family: 'Oxygen', sans-serif;
+	line-height: 20px;
+}
+
+#poem {
+	background-color: black;
+	opacity: .8;
+	border: 5px double white;
+	width: 300px;
+	height: 210px;
+	margin: 10%;
+	padding: 10px;
+}
+
+#mastHead {
+	background-color:rgba(0,0,0,0.5);
+	height: 10%;
+	width: 100%;
+}
+
+#logos {
+	float: right;
+	padding-right: 20px;
+	font-size: 40px;
+}
+
+.fa {
+	padding-right: 15px;
+	height: 30px;
+	color: grey;
+}
+
+.fa:hover {
+	color: white;
+}
+
+@media only screen and (max-width: 480px) {
+	.fa-mobile {
+		color: white;
+	}
+
+	#poem {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		border: none;
+	}
+
+     #logos {
+	     float: none;
+     }
+
+     h1 span {
+	     display: inline-block;
+     }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 640px) {
+	.fa-tablet {
+		color: white;
+	}
+
+	#logos {
+		float: none;
+	}
+
+     h1 span {
+	     display: inline-block;
+     }
+}
+
+@media only screen and (min-width: 1000px) {
+	.fa-desktop {
+		color: white;
+	}
+
+	body {
+		background-size: 100%;
+	}
+
+}
